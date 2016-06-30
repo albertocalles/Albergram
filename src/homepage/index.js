@@ -6,6 +6,5 @@ var title = require('title');
 page('/', function(ctx, next){
 	title('AlberGram');
 	var main = document.getElementById('main-container');
-	main.innerHTML = '<a href="/signup">Signup</a>';
-	
-});
+	empty(main).appendChild(template);
+})
